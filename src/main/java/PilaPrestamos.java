@@ -15,7 +15,7 @@ public class PilaPrestamos { // pila
 
         NodoPrestamo nuevo = new NodoPrestamo(d); // crear nodo
 
-        nuevo.siguiente = cima; // apunta a la cima
+       nuevo.setNext(cima); // apunta a la cima
 
         cima = nuevo; // nueva cima
 
