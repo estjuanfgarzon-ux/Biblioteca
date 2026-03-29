@@ -1,44 +1,29 @@
-//Esta clase implementa una lista enlazada manual usando nodos para almacenar los libros.
- // paquete
-import com.murcia.utils.*;
-public class ListaLibros { // lista enlazada
-  
-    private CeldaLibro primero; // primer nodo
 
-    public ListaLibros() { // constructor
+import com.murcia.utils.ListaEnlazada; // Importamos la lista del profe
 
-        primero = null; // lista vacia
+// Maneja libros usando la estructura ya definida por el profe
+public class ListaLibros extends ListaEnlazada<Libro> {
 
+    // Constructor
+    public ListaLibros() {
+
+        // Llama al constructor de la clase padre
+        super(); // inicializa head y size
     }
 
-    public void agregar(Libro l) { // metodo agregar
+    // Método equivalente a "agregar" 
+    public void agregar(Libro l) {
 
-        CeldaLibro nuevo = new CeldaLibro(l); // crea nodo
-
-        if (primero == null) { // si lista vacia
-
-            primero = nuevo; // nuevo es primero
-
-        } else {
-
-            CeldaLibro aux = primero; // auxiliar
-
-            while (aux.siguiente != null) { // recorrer
-
-                aux = aux.siguiente; // avanzar
-
-            }
-
-            aux.siguiente = nuevo; // agregar al final
-
-        }
-
+        
+        // Este método ya se encarga de crear nodos y enlazarlos
+        this.add(l);
     }
 
-    public CeldaLibro getPrimero() { // obtener primero
+    // Método para obtener el primero 
+    public Libro getPrimero() {
 
-        return primero; // devuelve primero
-
+        // Retorna el primer elemento de la lista
+        return this.getFirst();
     }
 
 }
