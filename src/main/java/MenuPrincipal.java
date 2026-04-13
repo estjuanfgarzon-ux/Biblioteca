@@ -25,57 +25,57 @@ public class MenuPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        btnAgregarLibro = new javax.swing.JButton();
+        btnAgregarUsuario = new javax.swing.JButton();
+        btnPrestarLibro = new javax.swing.JButton();
+        btnMostrarLibros = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        btnMostrarUsuarios = new javax.swing.JButton();
+        btnMostrarPrestamos = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setText("Agregar Libro");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnAgregarLibro.setText("Agregar Libro");
+        btnAgregarLibro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnAgregarLibroActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Agregar  Usuario ");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnAgregarUsuario.setText("Agregar  Usuario ");
+        btnAgregarUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnAgregarUsuarioActionPerformed(evt);
             }
         });
 
-        jButton3.setText("Prestar Libro");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btnPrestarLibro.setText("Prestar Libro");
+        btnPrestarLibro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btnPrestarLibroActionPerformed(evt);
             }
         });
 
-        jButton4.setText("Mostrar Libros");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        btnMostrarLibros.setText("Mostrar Libros");
+        btnMostrarLibros.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                btnMostrarLibrosActionPerformed(evt);
             }
         });
 
         jLabel1.setText("SISTEMA BIBLIOTECA");
 
-        jButton5.setText("Mostrar Usuarios");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        btnMostrarUsuarios.setText("Mostrar Usuarios");
+        btnMostrarUsuarios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                btnMostrarUsuariosActionPerformed(evt);
             }
         });
 
-        jButton6.setText("Mostrar  Prestamos");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        btnMostrarPrestamos.setText("Mostrar  Prestamos");
+        btnMostrarPrestamos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                btnMostrarPrestamosActionPerformed(evt);
             }
         });
 
@@ -86,13 +86,13 @@ public class MenuPrincipal extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(127, 127, 127)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton6)
-                    .addComponent(jButton5)
-                    .addComponent(jButton4)
-                    .addComponent(jButton1)
+                    .addComponent(btnMostrarPrestamos)
+                    .addComponent(btnMostrarUsuarios)
+                    .addComponent(btnMostrarLibros)
+                    .addComponent(btnAgregarLibro)
                     .addComponent(jLabel1)
-                    .addComponent(jButton2)
-                    .addComponent(jButton3))
+                    .addComponent(btnAgregarUsuario)
+                    .addComponent(btnPrestarLibro))
                 .addContainerGap(141, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -101,63 +101,63 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1)
+                .addComponent(btnAgregarLibro)
                 .addGap(18, 18, 18)
-                .addComponent(jButton2)
+                .addComponent(btnAgregarUsuario)
                 .addGap(18, 18, 18)
-                .addComponent(jButton3)
+                .addComponent(btnPrestarLibro)
                 .addGap(18, 18, 18)
-                .addComponent(jButton4)
+                .addComponent(btnMostrarLibros)
                 .addGap(18, 18, 18)
-                .addComponent(jButton5)
+                .addComponent(btnMostrarUsuarios)
                 .addGap(18, 18, 18)
-                .addComponent(jButton6)
+                .addComponent(btnMostrarPrestamos)
                 .addContainerGap(26, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnAgregarLibroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarLibroActionPerformed
         // TODO add your handling code here:
         AgregarLibro v = new AgregarLibro(b);
 
 v.setVisible(true);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnAgregarLibroActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void btnMostrarLibrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMostrarLibrosActionPerformed
         // TODO add your handling code here:
         MostrarLibros v = new MostrarLibros(b);
 
 v.setVisible(true);
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_btnMostrarLibrosActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnAgregarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarUsuarioActionPerformed
         // TODO add your handling code here:
         AgregarUsuario v = new AgregarUsuario(b);
 
 v.setVisible(true);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnAgregarUsuarioActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void btnPrestarLibroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPrestarLibroActionPerformed
 PrestarLibro v = new PrestarLibro(b);
 
 v.setVisible(true);        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_btnPrestarLibroActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void btnMostrarUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMostrarUsuariosActionPerformed
 
 MostrarUsuarios m = new MostrarUsuarios(b);
 
 m.setVisible(true);        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_btnMostrarUsuariosActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void btnMostrarPrestamosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMostrarPrestamosActionPerformed
         // TODO add your handling code here:
         MostrarPrestamos m = new MostrarPrestamos(b);
 
 m.setVisible(true);
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_btnMostrarPrestamosActionPerformed
 
     /**
      * @param args the command line arguments
@@ -185,12 +185,12 @@ m.setVisible(true);
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
+    private javax.swing.JButton btnAgregarLibro;
+    private javax.swing.JButton btnAgregarUsuario;
+    private javax.swing.JButton btnMostrarLibros;
+    private javax.swing.JButton btnMostrarPrestamos;
+    private javax.swing.JButton btnMostrarUsuarios;
+    private javax.swing.JButton btnPrestarLibro;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
